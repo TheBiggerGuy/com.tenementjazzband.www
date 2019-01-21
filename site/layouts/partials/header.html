@@ -1,7 +1,15 @@
 {{- block "header" . }}
-<header class="row mb-4">
-    <img src="top_banner.png" class="img-fluid mx-auto">
-    {{ if .Title}}{{ if not .Params.hideTitle }}<h1>{{ .Title }}</h1>{{ end }}{{ end }}
-    {{ if .Description }}{{ if not .Params.hideDescription }}<h2>{{ .Description }}</h2>{{ end }}{{ end }}
+<header class="container-fluid mb-4">
+    <div class="col-12">
+        <div class="row">
+            <picture class="mx-auto">
+                <img src="top_banner.png" class="img-fluid" alt="Header image of the band">
+            </picture>
+        </div>
+        <div class="row">
+            {{ if .Title}}{{ if not .Params.hideTitle }}<h1>{{ .Title }}</h1>{{ end }}{{ end }}
+            {{ if .Description }}{{ if not .Params.hideDescription }}<h2>{{ .Description }}</h2>{{ end }}{{ end }}
+        </div>
+    </div>
 </header>
 {{- end }}
