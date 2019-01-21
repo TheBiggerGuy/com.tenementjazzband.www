@@ -14,7 +14,7 @@ enableRobotsTXT = true
 # Fail if "ref" or "relref" can not be resolved
 refLinksErrorLevel = "ERROR"
 
-#googleAnalytics = "UA-126221439-1"
+googleAnalytics = "UA-132875721-1"
 
 [author]
     displayName = "Guy Taylor"
