@@ -1,0 +1,45 @@
+# https://gohugo.io/getting-started/configuration/
+# Site vars (see https://gohugo.io/variables/site/)
+
+baseURL = "https://www.tenementjazzband.com/"
+languageCode = "en-gb"
+
+title = "Tenement Jazz Band"
+copyright = "Guy Taylor"
+theme = ""
+
+enableGitInfo = true
+enableRobotsTXT = true
+
+# Fail if "ref" or "relref" can not be resolved
+refLinksErrorLevel = "ERROR"
+
+#googleAnalytics = "UA-126221439-1"
+
+[author]
+    displayName = "Guy Taylor"
+    [social]
+        twitter = "TheBiggerGuy"
+
+[params]
+    SiteDescription = "Home of the Tenement Jazz Band"
+
+# Disable all third party for GDPR
+[privacy]
+    [privacy.disqus]
+        disable = true
+    [privacy.googleAnalytics]
+        disable = false
+        AnonymizeIP = true
+    [privacy.instagram]
+        disable = true
+    [privacy.twitter]
+        disable = true
+    [privacy.vimeo]
+        disable = true
+    [privacy.youtube]
+        disable = true
+
+[imaging]
+    resampleFilter = "Lanczos"
+    quality = 90
