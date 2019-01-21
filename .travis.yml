@@ -86,7 +86,7 @@ jobs:
         provider: script
         script:
           # Requires AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
-          - aws s3 sync 'site/public' 's3://com.thebiggerguy.www' --region='eu-west-1' --acl='private' --delete
+          - aws s3 sync 'site/public' 's3://com.tenementjazzband.www' --region='eu-west-1' --acl='private' --delete
         skip_cleanup: true
       after_deploy:
         - aws cloudfront create-invalidation --distribution-id "${AWS_CLOUDFRONT_DISTRIBUTION_ID}" --paths '/*'
