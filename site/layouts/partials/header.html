@@ -1,3 +1,7 @@
-<div class="row">
+{{- block "header" . }}
+<header class="row mb-4">
     <img src="top_banner.png" class="img-fluid mx-auto">
-</div>
+    {{ if .Title}}{{ if not .Params.hideTitle }}<h1>{{ .Title }}</h1>{{ end }}{{ end }}
+    {{ if .Description }}{{ if not .Params.hideDescription }}<h2>{{ .Description }}</h2>{{ end }}{{ end }}
+</header>
+{{- end }}

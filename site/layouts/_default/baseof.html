@@ -35,25 +35,16 @@
     {{ "<!-- End header -->" | safeHTML }}
 
     <main role="main" id="main">
-
         <div class="container section-{{ .Section }}">
-            {{ "<!-- Start header -->" | safeHTML }}
-            {{- block "header" . }}
-            <header class="mb-4">
-                {{ if .Title}}{{ if not .Params.hideTitle }}<h1>{{ .Title }}</h1>{{ end }}{{ end }}
-                {{ if .Description }}{{ if not .Params.hideDescription }}<h2>{{ .Description }}</h2>{{ end }}{{ end }}
-            </header>
-            {{- end }}
-            {{ "<!-- End header -->" | safeHTML }}
-
             {{ "<!-- Start main -->" | safeHTML }}
             {{- block "main" . }}{{- end }}
             {{ "<!-- End main -->" | safeHTML }}
         </div>
-
     </main>
 
+    {{ "<!-- Start footer -->" | safeHTML }}
     {{ partial "footer.html" . }}
+    {{ "<!-- End footer -->" | safeHTML }}
 
     {{ "<!-- Scripts -->" | safeHTML }}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>

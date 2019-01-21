@@ -1,7 +1,5 @@
 {{ define "main" }}
-
-<div class="row text-center">
+{{ "<!-- Start single main -->" | safeHTML }}
 {{ .Content }}
-</div>
-
+{{ "<!-- End single main -->" | safeHTML }}
 {{ end }}
