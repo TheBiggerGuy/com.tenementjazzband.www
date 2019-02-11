@@ -1,9 +1,9 @@
 ---
 date: 2019-01-21T01:38:43+00:00
 
----
+title: "Tenement Jazz Band"
 
-# Tenement Jazz Band
+---
 
 Tenement Jazz band are a traditional jazz band formed in early 2018 in Edinburgh, Scotland. Brought together by their shared love of New Orleans music, and comprising musicians from various corners of Edinburgh’s vibrant jazz scene, they are on a journey of exploration back to the roots of the music that they play.
 

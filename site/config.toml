@@ -16,6 +16,18 @@ refLinksErrorLevel = "ERROR"
 
 googleAnalytics = "UA-132875721-1"
 
+[menu]
+    [[menu.main]]
+        identifier = "home"
+        name = "Home"
+        url = "/"
+        weight = -110
+
+    [[menu.main]]
+        name = "events"
+        url = "/events/"
+        weight = -100
+
 [author]
     displayName = "Guy Taylor"
     [social]

@@ -3,12 +3,24 @@
     <div class="col-12">
         <div class="row">
             <picture class="mx-auto">
-                <img src="top_banner.png" class="img-fluid" alt="Header image of the band">
+                <img src="{{ "/top_banner.png" | absURL }}" class="img-fluid" alt="Header image of the band">
             </picture>
         </div>
+
         <div class="row">
-            {{ if .Title}}{{ if not .Params.hideTitle }}<h1>{{ .Title }}</h1>{{ end }}{{ end }}
-            {{ if .Description }}{{ if not .Params.hideDescription }}<h2>{{ .Description }}</h2>{{ end }}{{ end }}
+            <ul class="nav nav-pills mx-auto">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                    {{ if .HasChildren }}
+                        {{ errorf "Child menus are currently not supported: %s" .Path }}
+                    {{ end }}
+                    <li class="nav-item">
+                        <a href="{{ .URL }}" class="nav-link {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}">
+                            {{ .Name }}
+                        </a>
+                    </li>
+                {{ end }}
+            </ul>
         </div>
     </div>
 </header>
