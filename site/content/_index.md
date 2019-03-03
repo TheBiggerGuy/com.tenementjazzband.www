@@ -26,4 +26,4 @@ In their brief existence so far they have performed at Aberdeen, Edinburgh, Dund
 	<i>New Orleans Wiggle</i> by <i>Tenement Jazz Band</i> now available from <a href="https://tenementjazzband.bandcamp.com/releases"><span class="fab fa-bandcamp"></span>/TenementJazzBand</a>.
 </p>
 
-{{< bandcamp 1900500612 "mx-auto embeded-bootcamp-iframe" >}}
+{{< bandcamp album="1900500612" class="mx-auto embeded-bootcamp-iframe" href="http://tenementjazzband.bandcamp.com/album/new-orleans-wiggle" alt="New Orleans Wiggle by Tenement Jazz Band" >}}
