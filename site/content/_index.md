@@ -12,6 +12,11 @@ Their aims are to capture the raw energy and excitement of the early jazz record
 In their brief existence so far they have performed at Aberdeen, Edinburgh, Dundee and Glasgow Jazz Festivals, collaborated with various musicians via their own Cellar Session residency, and performed their own hit show on the Edinburgh Fringe telling the story of the 'Red Hot Roots of Jazz' from turn of the century New Orleans and beyond.
 
 
+## Tour Dates
+
+{{< songkick 9406004 "Tenement Jazz Band" >}}
+
+
 ## New EP Available Now
 
 [<img src="ep_cover.jpg" class="img-fluid d-block mx-auto" alt="EP album cover">](https://tenementjazzband.bandcamp.com/releases)
@@ -21,4 +26,4 @@ In their brief existence so far they have performed at Aberdeen, Edinburgh, Dund
 	<i>New Orleans Wiggle</i> by <i>Tenement Jazz Band</i> now available from <a href="https://tenementjazzband.bandcamp.com/releases"><span class="fab fa-bandcamp"></span>/TenementJazzBand</a>.
 </p>
 
-<iframe class="mx-auto embeded-bootcamp-iframe" src="https://bandcamp.com/EmbeddedPlayer/album=1900500612/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="http://tenementjazzband.bandcamp.com/album/new-orleans-wiggle">New Orleans Wiggle by Tenement Jazz Band</a></iframe>
+{{< bandcamp 1900500612 "mx-auto embeded-bootcamp-iframe" >}}

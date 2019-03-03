@@ -1,0 +1,6 @@
+{{ $album_id := .Get 0 }}
+{{ $css_class := .Get 1 }}
+
+<iframe src="https://bandcamp.com/EmbeddedPlayer/album={{ $album_id }}/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" class="{{ $css_class }}" seamless>
+    <a href="http://tenementjazzband.bandcamp.com/album/new-orleans-wiggle">New Orleans Wiggle by Tenement Jazz Band</a>
+</iframe>

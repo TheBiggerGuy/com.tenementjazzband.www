@@ -1,0 +1,5 @@
+{{ $artist_number := .Get 0 }}
+{{ $artist_name := .Get 1 }}
+
+<a href="https://www.songkick.com/artists/{{ $artist_number }}" class="songkick-widget" data-theme="dark" data-track-button="on" data-detect-style="true" data-background-color="transparent">{{ $artist_name }} tour dates</a>
+<script src="https://widget.songkick.com/{{ $artist_number }}/widget.js"></script>
