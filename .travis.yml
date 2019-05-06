@@ -2,7 +2,7 @@
 
 os: linux
 dist: xenial
-language: generic
+language: minimal
 
 addons:
   apt:
