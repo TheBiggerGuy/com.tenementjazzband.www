@@ -21,6 +21,6 @@ jobs:
           path: ~/.local
           key: ${{ runner.os }}-${{ hashFiles('.ci/*.sh') }}
 
-      - name: Run a one-line script
+      - name: Run Tests
         run: ./.ci/test.sh
         shell: bash
