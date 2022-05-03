@@ -4,6 +4,8 @@
 set -o errexit
 set -o pipefail
 
+source "${BASH_SOURCE%/*}/versions.sh"
+
 echo "HUGO_VERSION=${HUGO_VERSION}"
 echo "HUGO_HASH=${HUGO_HASH}"
 
