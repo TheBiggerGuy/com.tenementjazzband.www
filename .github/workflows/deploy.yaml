@@ -5,7 +5,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-20.04
 
     steps:
@@ -22,6 +22,26 @@ jobs:
 
       - name: Run Tests
         run: ./.ci/test.sh
+        shell: bash
+
+  archive:
+    needs: test
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout repository and submodules
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.local
+          key: ${{ runner.os }}-${{ hashFiles('.ci/*.sh') }}
+
+      - name: Archive
+        run: ./.ci/archive.sh
         shell: bash
 
       - name: Bump version and push tag
@@ -42,10 +62,6 @@ jobs:
           draft: false
           prerelease: false
 
-      - name: Archive
-        run: ./.ci/archive.sh
-        shell: bash
-
       - name: Upload Release Asset
         id: upload-release-asset 
         uses: actions/upload-release-asset@v1
@@ -57,6 +73,24 @@ jobs:
           asset_name: public.tar.gz
           asset_content_type: application/gzip
 
+  deploy:
+    needs: archive
+    runs-on: ubuntu-20.04
+    environment: Deployment
+
+    steps:
+      - name: Checkout repository and submodules
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.local
+          key: ${{ runner.os }}-${{ hashFiles('.ci/*.sh') }}
+
+      # TODO: Move to https://github.com/aws-actions/configure-aws-credentials
       - name: Deploy
         run: ./.ci/deploy.sh
         shell: bash
