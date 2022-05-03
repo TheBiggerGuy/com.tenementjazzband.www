@@ -5,3 +5,7 @@
 site/public
 site/resources
 
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
