@@ -5,9 +5,10 @@
 .embeded-bootcamp-iframe {
     display: none;
     border: 0;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 470px;
 }
+
 @include media-breakpoint-up(sm) {
   .embeded-bootcamp-iframe {
     display: block;
