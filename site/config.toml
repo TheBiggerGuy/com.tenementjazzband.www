@@ -5,7 +5,7 @@ baseURL = "https://www.tenementjazzband.com/"
 languageCode = "en-gb"
 
 title = "Tenement Jazz Band"
-copyright = "Guy Taylor"
+copyright = "Tenement Jazz Band"
 theme = ""
 
 enableGitInfo = true
